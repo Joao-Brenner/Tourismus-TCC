@@ -1,0 +1,258 @@
+Inventário de Licenças do Projeto Tourismus
+
+Este documento lista todas as ferramentas, bibliotecas e fontes de dados utilizadas no Projeto Tourismus,
+detalhando as respectivas licenças e as obrigações de conformidade aplicáveis para garantir a distribuição legal do software.
+
+1. Softwares de Ambiente e Ferramentas de Desenvolvimento
+
+Estas licenças cobrem o ambiente de execução e as ferramentas utilizadas na criação e manutenção do projeto.
+
+XAMPP
+
+Versão: 3.3.0
+
+Licença: GNU General Public License (GPL)
+
+Especificação: O XAMPP é distribuído sob uma licença Copyleft (Viral Forte). Contudo, o código de aplicação do Projeto Tourismus é tratado como
+um trabalho separado que se executa com o XAMPP, e não uma modificação direta dele.
+
+Impacto no Projeto: Não impõe a licença GPL ao código-fonte do Projeto Tourismus.
+
+PHP
+
+Versão: 8.2.12
+
+Licença: PHP License 3.01
+
+Especificação: Licença de software livre permissiva.
+
+MySQL
+
+Versão: 8.0.40
+
+Licença: GPL v2
+
+Especificação: O servidor de banco de dados é software Copyleft. O Projeto Tourismus interage com ele como um cliente.
+
+Impacto no Projeto: O esquema do banco de dados e as consultas SQL do Projeto Tourismus não são considerados trabalhos derivados e,
+portanto, não são afetados pela viralidade da GPL.
+
+Node.js
+
+Versão: 22.19.0
+
+Licença: MIT
+
+Copyright Node.js contributors. All rights reserved.
+
+Especificação: Licença altamente permissiva.
+
+NPM
+
+Versão: 10.9.3
+
+Licença: Artistic License 2.0
+
+Copyright (c) npm, Inc. and Contributors
+
+Especificação: Licença de software livre flexível.
+
+Impacto no Projeto: Sem impacto significativo na licença do código do Projeto Tourismus.
+
+VS Code
+
+Versão: 1.106.2
+
+Licença: MIT
+
+Especificação: Licença altamente permissiva.
+
+Composer
+
+Versão: 2.8.12
+
+Licença: MIT
+
+Copyright (c) Nils Adermann, Jordi Boggiano
+
+Especificação: Licença altamente permissiva.
+
+2. Bibliotecas de Terceiros (Dependências de Código)
+
+Estas licenças cobrem as bibliotecas que o Projeto Tourismus incorpora ou vincula.
+
+Vlucas/phpdotenv
+
+Versão: 5.6.2
+
+Licença: BSD 3-Clause
+
+Copyright (c) 2014, Graham Campbell.
+Copyright (c) 2013, Vance Lucas.
+
+Especificação: Licença permissiva estilo BSD.
+
+GitHub: https://github.com/vlucas/phpdotenv
+
+Dompdf
+
+Versão: 3.1.4
+
+Licença: LGPL v2.1
+
+ Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+ 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+Especificação: Licença Copyleft Fraca (Lesser GPL). Permite que o software (Projeto Tourismus) se vincule dinamicamente à biblioteca 
+sem que o código principal seja LGPL.
+
+GitHub: https://github.com/dompdf/dompdf
+
+Leaflet
+
+Versão: 1.9.4
+
+Licença: BSD-2-Clause
+
+Copyright (c) 2010-2026, Volodymyr Agafonkin
+Copyright (c) 2010-2011, CloudMade
+
+Especificação: Licença permissiva estilo BSD.
+
+GitHub: https://github.com/Leaflet/Leaflet
+
+Leaflet Markercluster
+
+Versão: 1.5.3
+
+Licença: MIT
+
+Copyright 2012 David Leaver
+
+Especificação: Licença altamente permissiva.
+
+GitHub: https://github.com/Leaflet/Leaflet.markercluster
+
+Leaflet Color Markers
+
+Versão: ---
+
+Licença: BSD 2-Clause
+
+Copyright (c) 2010-2019, Vladimir Agafonkin
+Copyright (c) 2010-2011, CloudMade
+Copyright (c) 2013-2020, Thomas Pointhuber
+
+Especificação: Licença permissiva estilo BSD.
+
+GitHub: https://github.com/pointhi/leaflet-color-markers
+
+Choices.js
+
+Versão: Uso via CDN
+
+Licença: MIT
+
+Copyright (c) 2016 Josh Johnson
+
+Especificação: Licença altamente permissiva.
+
+GitHub: https://github.com/Choices-js/Choices
+
+Bootstrap Icons
+
+Versão: 1.13.1
+
+Licença: MIT
+
+Copyright (c) 2019-2024 The Bootstrap Authors
+
+Especificação: Conjunto de ícones vetoriais distribuídos sob MIT License.
+
+Impacto no Projeto: É obrigatório preservar o aviso de copyright e a referência à licença MIT.
+
+Fonte oficial: https://icons.getbootstrap.com/
+
+GitHub: https://github.com/twbs/icons
+
+3. Fontes de Dados e APIs (Consumo Remoto)
+
+Estes serviços são consumidos via requisições de rede (APIs). O foco principal das obrigações recai na Atribuição dos dados.
+
+OpenStreetMap (Dados de Mapa)
+
+Licença dos Dados: Open Data Commons Open Database License (ODbL 1.0)
+
+Licença das Imagens (Tiles): Open Data Commons Open Database License (ODbL 1.0)
+
+Link: https://www.openstreetmap.org/copyright
+
+Especificação: O OpenStreetMap requer que trabalhos derivados de seus dados e imagens sejam atribuídos e, se os dados forem modificados,
+que sejam compartilhados sob a ODbL.
+
+Obrigação de Conformidade: É obrigatório exibir a atribuição visual "© OpenStreetMap contributors" de forma proeminente na interface de mapa 
+do Projeto Tourismus.
+
+Nominatim (Geocodificação)
+
+Licença do Software: Apache-2.0 + GPLv2
+
+Licença dos Dados: ODbL 1.0
+
+Especificação: O uso da API remotamente não aciona as obrigações Copyleft (GPL) no código do cliente.
+
+Obrigação de Conformidade: A obrigação é a atribuição ODbL dos dados (coberta pela atribuição do OpenStreetMap).
+
+Termos de Acesso (Política de Uso Justo): Este serviço é fornecido como cortesia (best-effort), sem garantias de disponibilidade (sem SLA), e está 
+sujeito às seguintes restrições operacionais para evitar banimento:
+
+Limite de Taxa: Máximo de 1 requisição por segundo (1 req/s).
+
+Uso em Massa (Bulk Geocoding): Proibido; apenas uso interativo, pontual.
+
+Identificação Obrigatória: É mandatório o uso de um cabeçalho User-Agent válido para identificação e contato.
+
+Overpass API (Consulta de Dados Estruturados)
+
+Licença do Software: GNU Affero General Public License v3 (AGPLv3)
+
+Licença dos Dados: ODbL 1.0
+
+Especificação: A AGPLv3 é uma licença Copyleft desenhada para software de rede.
+
+Obrigação de Conformidade: Devido ao consumo remoto via API, a AGPLv3 não afeta o código-fonte do Projeto Tourismus. 
+A obrigação é a atribuição ODbL dos dados (coberta pela atribuição do OpenStreetMap).
+
+Resumo das Obrigações de Licenciamento
+
+O Projeto Tourismus pode ser licenciado sob uma licença permissiva (como MIT ou BSD) sem conflito com as licenças Copyleft das ferramentas de 
+desenvolvimento (XAMPP, MySQL) ou dos serviços de API (Nominatim, Overpass).
+
+O foco de conformidade reside na Atribuição Visível e Documentada das fontes de dados:
+
+OpenStreetMap: Exibir "© OpenStreetMap contributors" no mapa.
+
+Bibliotecas Permissivas: Garantir que os avisos de direitos autorais originais e a isenção de responsabilidade completa sejam 
+preservados nos arquivos de licença originais (que são instalados via Composer/NPM) e mantidos em qualquer código copiado.
+
+As cláusulas de isenção de responsabilidade das licenças das bibliotecas permissivas permanecem válidas e são preservadas nos arquivos 
+LICENSE originais das bibliotecas
+
+Ao copiar arquivos (SVGs, ícones, trechos de código, etc.) das pastas vendor/ ou node_modules/ para outras áreas do projeto, é OBRIGATÓRIO 
+preservar o aviso de direitos autorais (Copyright (c)...) e garantir que ele faça uma referência clara à Licença.
+
+Ações Obrigatórias para Conformidade:
+
+Aviso de Copyright com Referência: Inclua a linha exata de Copyright (c)... no topo do arquivo copiado (como um comentário) e adicione uma 
+linha que referencie o nome da licença e onde o texto completo pode ser encontrado.
+
+Exemplo: /* Copyright (c) 2024 Autor. Licenciado sob a MIT License (ver arquivo LICENSE). */
+
+Disponibilização do Texto Completo da Licença: Para que a referência do copyright seja válida, o texto completo da licença deve ser distribuído 
+junto com o arquivo copiado. Escolha o método que melhor se adequa:
+
+Opção 1 (Recomendada): Copie o arquivo de licença original (LICENSE ou LICENCE.txt) e coloque-o na mesma pasta do arquivo de código que você copiou.
+
+Opção 2: Crie um arquivo auxiliar (README.md ou LICENCA.md) na mesma pasta, contendo o texto integral da licença original.
+
+Opção 3: Copie o conteúdo completo da licença diretamente para dentro do arquivo de código que você moveu (em um bloco de comentários).

@@ -1,0 +1,127 @@
+# =======================================================
+# 🔐 SEGURANÇA / ARQUIVOS SENSÍVEIS
+# =======================================================
+.env
+
+
+# Chaves e certificados
+/ssl/
+
+# Logs
+php_errors.log
+*.log
+
+
+# =======================================================
+# 📦 COMPOSER (PHP)
+# =======================================================
+/vendor/
+composer.phar
+
+
+# =======================================================
+# 🗂️ ARQUIVOS TEMPORÁRIOS / SISTEMA
+# =======================================================
+*.tmp
+*.bak
+*.cache
+*.dat
+*.bin
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+
+
+# =======================================================
+# 🧠 VISUAL STUDIO CODE / EDITORES
+# =======================================================
+.vscode/
+*.code-workspace
+*.idea/
+*.vs/
+*.vsconfig
+*.user
+
+
+# =======================================================
+# 🧰 MYSQL / DUMPS / BACKUPS
+# =======================================================
+/mysql/
+/db/
+/database/
+/data/
+/dump/
+/backup/
+/backups/
+/db_dumps/
+*.db
+*.sql          # NÃO comitar dumps de dados!
+*.dump
+
+# ❗ EXCEÇÃO — mantenha apenas o arquivo de estrutura
+!docs/PADS.sql
+
+
+# =======================================================
+# 🟩 NODE / NPM / FRONT-END
+# =======================================================
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/cache/
+cache/
+/caches/
+/tmp/
+/temp/
+
+# 🔓 EXCEÇÕES IMPORTANTES (mesmo com *.json ignorado)
+!composer.json
+!composer.lock
+!package.json
+!package-lock.json
+
+
+# =======================================================
+# 🗺️ MAPAS / OSM / API DATA (NUNCA COMITAR)
+# =======================================================
+/tiles/         # Tiles do OSM
+/osm/
+nominatim/
+weather/
+pois/
+cache.json
+*.json          # APIs → evita comitar dados baixados!
+
+
+# =======================================================
+# 📂 UPLOADS / ARQUIVOS GERADOS
+# =======================================================
+
+# PDFs gerados
+pdfs/*
+!pdfs/.gitkeep   # preserva a pasta
+
+# Imagens de perfis
+img/*
+!img/.gitkeep
+!img/default-user.jpg     # mantém somente a imagem padrão
+
+
+# =======================================================
+# 🖼️ ARQUIVOS GRANDES / MÍDIA (SUBMETER APENAS O NECESSÁRIO)
+# =======================================================
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+!libs/leaflet_color_markers/marker-icon-2x-black.png
+!libs/leaflet_color_markers/marker-icon-2x-red.png

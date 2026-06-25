@@ -1,0 +1,99 @@
+.historico-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.historico-container .btn-close-form {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6c757d;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+.historico-container .btn-close-form:hover {
+  color: #dc3545;
+}
+
+.historico-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0d6efd;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.historico-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.historico-tabela th {
+  background: #0d6efd;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.historico-tabela td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.historico-tabela tr:nth-child(even) {
+  background: #f2f8ff;
+}
+
+.historico-tabela tr:hover {
+  background: #e6f0ff;
+}
+
+.acoes {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1.4em; 
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.acoes:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.acoes.bi-search:hover {
+  color: #66b2ff; 
+}
+
+.acoes.bi-trash3-fill:hover {
+  color: #cc0000; 
+}
+
+.celula-vazia {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #f8f9fa;
+  color: #555;
+  font-weight: 500;
+}
+
+.btn-excluir {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.btn-excluir svg {
+  vertical-align: middle;
+}

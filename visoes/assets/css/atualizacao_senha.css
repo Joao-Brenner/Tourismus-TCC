@@ -1,0 +1,170 @@
+.overlay-senha {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.75);
+  z-index: 998;
+}
+
+.atualizar-senha-container {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #001f3f;
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 440px; 
+  z-index: 999;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.atualizar-senha-container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.atualizar-senha-container .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group-horizontal {
+  margin-bottom: 15px;
+}
+
+.input-with-icon {
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+  width: 100%;
+}
+
+.input-with-icon input {
+  flex: 1;
+}
+
+#btn-validar-senha 
+{ 
+background: #839def; 
+border: none; cursor: pointer; 
+padding: 0; height: 28px; 
+width: 28px; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+margin-bottom: 15px; 
+}
+
+
+.icon-lupa {
+  font-size: 16px; 
+  color: #0d6efd;  
+  line-height: 1;
+}
+
+.atualizar-senha-container label {
+  display: block;
+  margin-bottom: 2px;
+  text-align: left;
+  width: 100%;
+}
+
+.atualizar-senha-container input,
+.input-field {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  margin-bottom: 5px;
+  border: 1px solid #0d6efd; 
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.atualizar-senha-container input:disabled {
+  background-color: #bfbfbf; 
+  border: 1px solid #999;    
+  color: #444;               
+  cursor: not-allowed;
+}
+
+
+.atualizar-senha-container input:enabled,
+.atualizar-senha-container .input-enabled {
+  background-color: #fff;
+  border-color: #0d6efd;
+  color: #000;
+}
+
+.atualizar-senha-container button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.atualizar-senha-container button[type="submit"] {
+  background: #0074D9;
+  color: #fff;
+}
+
+.atualizar-senha-container button#btn-cancelar-senha {
+  background: #aaa;
+  color: #000;
+  margin-top: 5px;
+}
+
+.senha-requisitos {
+  margin: 5px 0 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 11px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.senha-requisitos li {
+  margin-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+.senha-requisitos li.ok {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.erro-balao {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  max-width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 13px;
+  z-index: 9999;
+}
+
+.sucesso-balao {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28a745;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  max-width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 13px;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+

@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #003366;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 35px;
+}
+
+.form-group, .form-row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group.full-width {
+    justify-content: center;
+}
+
+.input-field {
+    flex: 1;
+    margin: 0 5px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4facfe;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #00c6fb;
+}
+
+.cadastro-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.cadastro-link a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.error_balloon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  max-width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-size: 13px;
+  z-index: 9999;
+}
+
+.error_balloon ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.error_balloon li {
+  margin-bottom: 6px;
+}
